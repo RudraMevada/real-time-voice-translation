@@ -5,9 +5,11 @@ from fastapi.templating import Jinja2Templates
 import shutil
 from pathlib import Path
 from uuid import uuid4
+import os
 
 from final import process_audio
 
+# ✅ Define app FIRST
 app = FastAPI()
 
 app.mount("/static", StaticFiles(directory="static"), name="static")
