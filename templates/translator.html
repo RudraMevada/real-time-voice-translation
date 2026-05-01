@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AI Voice Translator</title>
+  <link rel="stylesheet" href="/static/css/style.css">
+</head>
+
+<body class="translator-page">
+
+  <!-- ================= NAVBAR ================= -->
+  <header class="navbar">
+    <a href="/" class="logo-link">
+     <h1 class="logo">Talksy</h1>
+    </a>
+
+    <button id="themeToggle">🌙</button>
+  </header>
+
+  <!-- ================= TRANSLATOR ================= -->
+  <section class="translator">
+
+    <div class="translator-shell">
+
+      <div class="translator-header">
+        <div class="translator-badge">
+  <span class="badge-dot"></span>
+  AI Voice Translator
+</div>
+
+        <h2>Real-Time Voice Translator</h2>
+
+        <p>
+          Record speech, translate instantly, and listen to natural voice playback
+          in your selected target language.
+        </p>
+      </div>
+
+      <div class="translator-grid">
+
+        <!-- ================= SOURCE ================= -->
+        <div class="card source-card">
+
+          <div class="panel-top">
+            <h3>Your Language</h3>
+            <span class="panel-tag">Input</span>
+          </div>
+
+          <div class="lang-box">
+            <input
+              type="text"
+              id="fromSearch"
+              placeholder="Search language...">
+
+            <div
+              class="lang-list"
+              id="fromList">
+            </div>
+          </div>
+
+          <!-- Recording Status -->
+          <div class="voice-status" id="voiceStatus">
+            Ready to listen
+          </div>
+
+          <!-- Waveform -->
+          <div class="waveform" id="waveform">
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+
+          <textarea
+            id="sourceText"
+            placeholder="Your speech appears here..."
+            readonly>
+          </textarea>
+
+          <div class="card-buttons">
+            <button
+              class="primary-btn"
+              id="recordBtn">
+              🎤 Speak
+            </button>
+          </div>
+
+        </div>
+
+        <!-- ================= SWAP ================= -->
+        <div class="swap-container">
+          <div class="swap-panel">
+            <span class="swap-label">Switch</span>
+            <button id="swapLang" aria-label="Swap languages">⇄</button>
+          </div>
+        </div>
+
+        <!-- ================= TARGET ================= -->
+        <div class="card target-card">
+
+          <div class="panel-top">
+            <h3>Translated Language</h3>
+            <span class="panel-tag">Output</span>
+          </div>
+
+          <div class="lang-box">
+            <input
+              type="text"
+              id="toSearch"
+              placeholder="Search language...">
+
+            <div
+              class="lang-list"
+              id="toList">
+            </div>
+          </div>
+
+          <div class="voice-status output-status">
+            Translation output
+          </div>
+
+          <textarea
+            id="translatedText"
+            placeholder="Translation appears here..."
+            readonly>
+          </textarea>
+
+          <div class="card-buttons">
+            <button
+              class="primary-btn"
+              id="playBtn"
+              onclick="playTranslation()">
+              🔊 Listen
+            </button>
+
+            <button
+              class="secondary-btn"
+              id="copyBtn">
+              📋 Copy
+            </button>
+          </div>
+
+        </div>
+
+      </div>
+    </div>
+
+  </section>
+
+  <script src="/static/javascript/app.js"></script>
+</body>
+
+</html>

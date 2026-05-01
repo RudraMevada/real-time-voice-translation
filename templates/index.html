@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AI Voice Translator</title>
+  <link rel="stylesheet" href="/static/css/style.css">
+</head>
+
+<body class="home-page" id="top">
+
+  <!-- ================= NAVBAR ================= -->
+  <header class="navbar">
+
+    <a href="/" class="logo-link">
+     <h1 class="logo">Talksy</h1>
+    </a>
+
+    <div class="nav-right">
+      <button id="themeToggle">🌙</button>
+      <button id="menuBtn" class="menu-btn">☰</button>
+    </div>
+
+  </header>
+
+  <!-- ================= SIDE PANEL ================= -->
+  <div id="sidePanel" class="side-panel">
+
+    <div class="panel-header">
+      <h3>Menu</h3>
+      <span id="closePanel">&times;</span>
+    </div>
+
+    <button onclick="openModal('users')">👥 Our Users</button>
+    <button onclick="openModal('purpose')">🎯 Our Purpose</button>
+    <button onclick="openModal('about')">🤖 About Us</button>
+    <button onclick="openModal('goal')">🚀 Our Goal</button>
+
+  </div>
+
+  <!-- ================= MODAL ================= -->
+  <div id="modal" class="modal">
+    <div class="modal-box">
+      <span id="closeModal">&times;</span>
+      <img id="modalImg" alt="Modal illustration">
+      <h2 id="modalTitle"></h2>
+      <p id="modalText"></p>
+    </div>
+  </div>
+
+  <!-- ================= HERO ================= -->
+  <section class="hero">
+
+    <!-- decorative layers for futuristic styling -->
+    <div class="hero-glow hero-glow-1"></div>
+    <div class="hero-glow hero-glow-2"></div>
+    <div class="hero-grid"></div>
+
+    <div class="hero-content">
+
+    <div class="hero-badge">
+  <span class="badge-dot"></span>
+  AI Voice Translator
+</div>
+
+     <h1>
+  Real-Time Voice Translation
+  <span class="gradient-text">for Global Communication.</span>
+</h1>
+
+      <p>
+        Experience real-time AI voice translation with fast speech recognition,
+        multilingual text conversion, and natural translated voice playback in one seamless interface.
+      </p>
+
+      <div class="hero-buttons">
+        <a href="/translator" class="primary-btn hero-link">
+          🎙 Start Translating
+        </a>
+
+      </div>
+
+      <div class="hero-stats">
+        <div class="stat-card">
+          <h3>Real-Time</h3>
+          <p>Fast voice-to-voice experience for multilingual conversations.</p>
+        </div>
+
+        <div class="stat-card">
+          <h3>Multi-Language</h3>
+          <p>Support for major global languages with simplified selection.</p>
+        </div>
+
+        <div class="stat-card">
+          <h3>AI Powered</h3>
+          <p>Speech recognition, translation, and playback in one system.</p>
+        </div>
+      </div>
+
+    </div>
+
+  </section>
+
+  <!-- ================= FEATURES SECTION ================= -->
+  <section class="features-section">
+
+    <div class="section-heading">
+      <span class="section-label">Platform Features</span>
+      <h2>Built for Seamless Global Communication</h2>
+      <p>
+        Designed for students, travelers, professionals, and teams who need instant multilingual interaction.
+      </p>
+    </div>
+
+    <div class="features">
+
+      <div class="feature-card">
+        <div class="feature-icon">🎤</div>
+        <h3>Voice Recognition</h3>
+        <p>
+          Capture speech directly from the microphone with a simple and accessible voice-first workflow.
+        </p>
+      </div>
+
+      <div class="feature-card">
+        <div class="feature-icon">🌍</div>
+        <h3>Instant Translation</h3>
+        <p>
+          Convert spoken input into translated text quickly for cross-language conversations and understanding.
+        </p>
+      </div>
+
+      <div class="feature-card">
+        <div class="feature-icon">🔊</div>
+        <h3>Natural Voice Playback</h3>
+        <p>
+          Hear translated output through generated speech for a smoother and more interactive experience.
+        </p>
+      </div>
+
+    </div>
+
+  </section>
+
+  <script src="/static/javascript/app.js"></script>
+</body>
+
+</html>
